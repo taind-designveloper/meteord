@@ -1,7 +1,4 @@
 set -e
-# start redis
-service redis_6379 start
-redis-cli config set notify-keyspace-events Ex
 # start app
 if [ -d /bundle ]; then
   cd /bundle
